@@ -8,4 +8,10 @@ describe('OysterCard', function() {
     expect(oystercard.balance).toEqual(0)
   });
 
+  it('can have credit added to it', function() {
+      oystercard = new OysterCard;
+      oystercard.topup(10)
+      expect(oystercard.balance).toEqual(10)
+  });
+
 });
